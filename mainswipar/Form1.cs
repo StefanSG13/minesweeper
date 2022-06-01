@@ -95,7 +95,7 @@ namespace mainswipar
             if (e.Button == MouseButtons.Right)
             {
                 if (crez.Grid[x, y].Steag == false) { 
-                pct[x, y].BackgroundImage = Image.FromFile("flag.png");
+                pct[x, y].BackgroundImage = Image.FromFile("../../Image/flag.png");
                 pct[x, y].BackgroundImageLayout = ImageLayout.Stretch;
                 crez.Grid[x, y].Steag = true;
                 }
@@ -165,7 +165,6 @@ namespace mainswipar
                 {
                     for (int j = 0; j < size; j++)
                     {
-                        string ct;
                         pct[i, j].BackgroundImage = null;
                         if (crez.Grid[i, j].Bomba == true)
                             pct[i, j].BackColor = Color.Red;
